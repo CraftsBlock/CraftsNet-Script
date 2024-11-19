@@ -1,7 +1,7 @@
-package de.craftsblock.craftsnet.modules.script.language.compiler;
+package de.craftsblock.cnet.modules.script.language.compiler;
 
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetToken;
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetTokenType;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetToken;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetTokenType;
 
 import java.util.ArrayList;
 import java.util.HashMap;

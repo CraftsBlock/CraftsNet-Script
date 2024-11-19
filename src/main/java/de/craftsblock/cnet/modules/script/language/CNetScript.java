@@ -1,7 +1,7 @@
-package de.craftsblock.craftsnet.modules.script.language;
+package de.craftsblock.cnet.modules.script.language;
 
+import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftsnet.api.http.Exchange;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetCompiler;
 
 /**
  * Base class for scripts in the CNet scripting language.

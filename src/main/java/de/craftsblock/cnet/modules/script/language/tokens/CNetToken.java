@@ -1,4 +1,4 @@
-package de.craftsblock.craftsnet.modules.script.language.tokens;
+package de.craftsblock.cnet.modules.script.language.tokens;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Range;

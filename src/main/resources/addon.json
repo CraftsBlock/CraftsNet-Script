@@ -1,6 +1,6 @@
 {
   "name": "CraftsNetScript",
-  "main": "de.craftsblock.craftsnet.modules.script.Script",
+  "main": "de.craftsblock.cnet.modules.script.Script",
   "version": "1.0.0",
   "authors": [
     "Philipp Maywald",

@@ -1,11 +1,11 @@
-package de.craftsblock.craftsnet.modules.script.listeners;
+package de.craftsblock.cnet.modules.script.listeners;
 
+import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftscore.event.EventHandler;
 import de.craftsblock.craftscore.event.EventPriority;
 import de.craftsblock.craftscore.event.ListenerAdapter;
 import de.craftsblock.craftsnet.api.annotations.AutoRegister;
 import de.craftsblock.craftsnet.events.requests.shares.ShareFileLoadedEvent;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetCompiler;
 
 import java.io.File;
 import java.io.IOException;

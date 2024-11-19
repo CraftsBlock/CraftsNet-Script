@@ -1,11 +1,11 @@
-package de.craftsblock.craftsnet.modules.script.language.ast;
+package de.craftsblock.cnet.modules.script.language.ast;
 
 import de.craftsblock.craftsnet.addon.AddonClassLoader;
 import de.craftsblock.craftsnet.api.http.Exchange;
-import de.craftsblock.craftsnet.modules.script.language.CNetScript;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetInterpreter;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetParser;
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetTokenType;
+import de.craftsblock.cnet.modules.script.language.CNetScript;
+import de.craftsblock.cnet.modules.script.language.compiler.CNetInterpreter;
+import de.craftsblock.cnet.modules.script.language.compiler.CNetParser;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetTokenType;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

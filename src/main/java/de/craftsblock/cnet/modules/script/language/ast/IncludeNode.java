@@ -1,10 +1,10 @@
-package de.craftsblock.craftsnet.modules.script.language.ast;
+package de.craftsblock.cnet.modules.script.language.ast;
 
 import de.craftsblock.craftsnet.api.http.Exchange;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetCompiler;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetInterpreter;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetParser;
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetTokenType;
+import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
+import de.craftsblock.cnet.modules.script.language.compiler.CNetInterpreter;
+import de.craftsblock.cnet.modules.script.language.compiler.CNetParser;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetTokenType;
 
 import java.io.File;
 import java.io.FileNotFoundException;

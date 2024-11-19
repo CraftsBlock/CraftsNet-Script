@@ -1,8 +1,8 @@
-package de.craftsblock.craftsnet.modules.script;
+package de.craftsblock.cnet.modules.script;
 
 import de.craftsblock.craftsnet.addon.Addon;
-import de.craftsblock.craftsnet.modules.script.listeners.ShareListener;
-import de.craftsblock.craftsnet.modules.script.routes.VersionRoute;
+import de.craftsblock.cnet.modules.script.listeners.ShareListener;
+import de.craftsblock.cnet.modules.script.routes.VersionRoute;
 
 /**
  * The {@link Script} class is an addon that integrates functionality for scripting into the application.

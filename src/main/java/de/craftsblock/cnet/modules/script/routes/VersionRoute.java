@@ -1,12 +1,12 @@
-package de.craftsblock.craftsnet.modules.script.routes;
+package de.craftsblock.cnet.modules.script.routes;
 
+import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftscore.json.Json;
 import de.craftsblock.craftsnet.addon.Addon;
 import de.craftsblock.craftsnet.api.annotations.AutoRegister;
 import de.craftsblock.craftsnet.api.http.*;
 import de.craftsblock.craftsnet.api.http.annotations.RequestMethod;
 import de.craftsblock.craftsnet.api.http.annotations.Route;
-import de.craftsblock.craftsnet.modules.script.language.compiler.CNetCompiler;
 
 import java.io.IOException;
 

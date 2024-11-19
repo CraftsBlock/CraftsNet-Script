@@ -1,8 +1,8 @@
-package de.craftsblock.craftsnet.modules.script.language.compiler;
+package de.craftsblock.cnet.modules.script.language.compiler;
 
-import de.craftsblock.craftsnet.modules.script.language.ast.ASTNode;
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetToken;
-import de.craftsblock.craftsnet.modules.script.language.tokens.CNetTokenType;
+import de.craftsblock.cnet.modules.script.language.ast.ASTNode;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetToken;
+import de.craftsblock.cnet.modules.script.language.tokens.CNetTokenType;
 import org.jetbrains.annotations.Range;
 
 import java.util.ArrayList;

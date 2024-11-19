@@ -1,7 +1,7 @@
-package de.craftsblock.craftsnet.modules.script.language.compiler;
+package de.craftsblock.cnet.modules.script.language.compiler;
 
+import de.craftsblock.cnet.modules.script.language.ast.ASTNode;
 import de.craftsblock.craftsnet.api.http.Exchange;
-import de.craftsblock.craftsnet.modules.script.language.ast.ASTNode;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
