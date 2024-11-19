@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group = 'de.craftsblock.craftsnet'
-version = '1.0-SNAPSHOT'
+group = 'de.craftsblock.craftsnet.modules'
+version = '1.0.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
