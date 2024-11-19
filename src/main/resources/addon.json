@@ -1,0 +1,11 @@
+{
+  "name": "CraftsNetScript",
+  "main": "de.craftsblock.craftsnet.modules.script.Script",
+  "version": "1.0.0",
+  "authors": [
+    "Philipp Maywald",
+    "CraftsBlock"
+  ],
+  "website": "https://craftsblock.de",
+  "description": "A simple scripting language build in into craftsnet"
+}
