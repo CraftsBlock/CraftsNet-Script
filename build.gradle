@@ -7,7 +7,18 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url "https://repo.craftsblock.de/releases" }
+    maven { url "https://repo.craftsblock.de/experimental" }
 }
 
 dependencies {
+    // CraftsBlock related dependencies ---------------------------------------------------------------------------------------
+
+    implementation "de.craftsblock:craftscore:3.7.66-SNAPSHOT"
+    implementation "de.craftsblock:craftsnet:3.0.7_14-EXPERIMENTAL"
+
+    // Third party needed dependencies ----------------------------------------------------------------------------------------
+
+    // https://mvnrepository.com/artifact/org.jetbrains/annotations
+    implementation 'org.jetbrains:annotations:26.0.1'
 }
