@@ -5,6 +5,7 @@ import de.craftsblock.craftscore.event.EventHandler;
 import de.craftsblock.craftscore.event.EventPriority;
 import de.craftsblock.craftscore.event.ListenerAdapter;
 import de.craftsblock.craftsnet.api.annotations.AutoRegister;
+import de.craftsblock.craftsnet.api.http.Exchange;
 import de.craftsblock.craftsnet.events.requests.shares.ShareFileLoadedEvent;
 
 import java.io.File;
@@ -47,8 +48,12 @@ public class ShareListener implements ListenerAdapter {
         // Check if the file can be compiled by the CNetCompiler
         if (!CNetCompiler.canCompile(file)) return;
 
+        // Load the original content type and append it to the response
+        Exchange exchange = event.getExchange();
+        exchange.response().setContentType(event.getContentType(), "text/plain");
+
         // Compile the file and respond via the event's exchange
-        CNetCompiler.compile(file, event.getExchange());
+        CNetCompiler.compile(file, exchange);
 
         // Cancel the event to prevent further handling
         event.setCancelled(true);
