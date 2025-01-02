@@ -1,5 +1,6 @@
 package de.craftsblock.cnet.modules.script;
 
+import de.craftsblock.craftsnet.CraftsNet;
 import de.craftsblock.craftsnet.addon.Addon;
 import de.craftsblock.cnet.modules.script.listeners.ShareListener;
 import de.craftsblock.cnet.modules.script.routes.VersionRoute;

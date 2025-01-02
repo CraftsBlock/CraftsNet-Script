@@ -2,6 +2,11 @@ plugins {
     id 'java'
 }
 
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
 group = 'de.craftsblock.craftsnet.modules'
 version = '1.0.0-SNAPSHOT'
 
@@ -22,3 +27,6 @@ dependencies {
     // https://mvnrepository.com/artifact/org.jetbrains/annotations
     implementation 'org.jetbrains:annotations:26.0.1'
 }
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
