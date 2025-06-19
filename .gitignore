@@ -54,3 +54,5 @@ test/
 
 ### Log file ###
 *.log
+
+.env
