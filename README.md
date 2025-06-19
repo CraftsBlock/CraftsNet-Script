@@ -8,7 +8,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/CraftsBlock/CraftsNet-Script)
 
 > [!NOTE]  
-> CraftsNet-Script requires at least the version 3.0.7-SNAPSHOT of CraftsNet.
+> CraftsNet-Script requires at least the version 3.4.4 of CraftsNet.
 >
 > It is also important to note that the internal compiler is currently under development and may change at any time!
 > If you would like to contribute to the project, you are welcome to do so.
@@ -32,7 +32,7 @@
   <dependency>
     <groupId>de.craftsblock.craftsnet.modules</groupId>
     <artifactId>script</artifactId>
-    <version>X.X.X-SNAPSHOT</version>
+    <version>X.X.X</version>
   </dependency>
 </dependencies>
 ```
@@ -48,6 +48,6 @@ repositories {
 ```gradle
 dependencies {
   ...
-  implementation "de.craftsblock.craftsnet.modules:script:X.X.X-SNAPSHOT"
+  implementation "de.craftsblock.craftsnet.modules:script:X.X.X"
 }
 ```
