@@ -1,5 +1,5 @@
 {
-  "name": "CraftsNetScript",
+  "name": "Script",
   "main": "de.craftsblock.cnet.modules.script.Script",
   "version": "1.0.0",
   "authors": [

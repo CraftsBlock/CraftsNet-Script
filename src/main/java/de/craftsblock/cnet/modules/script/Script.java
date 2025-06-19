@@ -16,7 +16,7 @@ import de.craftsblock.craftsnet.addon.meta.annotations.Meta;
  * @see ShareListener
  * @since 1.0.0-SNAPSHOT
  */
-@Meta(name = "CraftsNetScript")
+@Meta(name = "Script")
 public class Script extends Addon {
 
 }
