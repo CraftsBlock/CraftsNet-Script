@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * @author CraftsBlock
  * @author Philipp Maywald
- * @version 1.0.0
+ * @version 1.0.1
  * @since 3.0.7-SNAPSHOT
  */
 public class CNetInterpreter {
@@ -37,9 +37,8 @@ public class CNetInterpreter {
      * @param nodes    the list of AST nodes to interpret
      * @param exchange the exchange context in which to interpret the nodes
      * @return {@code true} if the compiler should continue after this interpretation, {@code false} otherwise
-     * @throws Exception if there was an exception while interpreting the list of nodes.
      */
-    public boolean interpret(List<ASTNode> nodes, Exchange exchange) throws Exception {
+    public boolean interpret(List<ASTNode> nodes, Exchange exchange) {
         for (ASTNode node : nodes)
             try {
                 if (!node.interpret(this, exchange))
@@ -60,7 +59,10 @@ public class CNetInterpreter {
      *                               the line number of the node associated with the error.
      */
     private void wrapException(ASTNode node, Throwable throwable) {
-        throw new RuntimeException("There was an " + throwable.getClass().getSimpleName() + " at line " + node.getLine() + ": " + throwable.getLocalizedMessage());
+        throw new RuntimeException("There was an %s at line %s: %s".formatted(
+                throwable.getClass().getSimpleName(), node.getLine(),
+                throwable.getLocalizedMessage()
+        ), throwable);
     }
 
     /**
