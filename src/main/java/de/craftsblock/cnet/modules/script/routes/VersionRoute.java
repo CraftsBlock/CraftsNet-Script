@@ -3,7 +3,9 @@ package de.craftsblock.cnet.modules.script.routes;
 import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftscore.json.Json;
 import de.craftsblock.craftsnet.addon.Addon;
-import de.craftsblock.craftsnet.api.http.*;
+import de.craftsblock.craftsnet.api.http.Exchange;
+import de.craftsblock.craftsnet.api.http.HttpMethod;
+import de.craftsblock.craftsnet.api.http.RequestHandler;
 import de.craftsblock.craftsnet.api.http.annotations.RequestMethod;
 import de.craftsblock.craftsnet.api.http.annotations.Route;
 import de.craftsblock.craftsnet.autoregister.meta.AutoRegister;
@@ -18,10 +20,10 @@ import de.craftsblock.craftsnet.autoregister.meta.AutoRegister;
  *
  * @author Philipp Maywald
  * @author CraftsBlock
+ * @version 1.0.0
  * @see Addon
  * @see RequestHandler
  * @see AutoRegister
- * @version 1.0.0
  * @since 1.0.0-SNAPSHOT
  */
 @AutoRegister
