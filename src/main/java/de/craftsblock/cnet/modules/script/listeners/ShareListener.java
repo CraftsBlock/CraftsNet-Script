@@ -20,7 +20,7 @@ import java.io.IOException;
  *
  * @author Philipp Maywald
  * @author CraftsBlock
- * @version 1.0.0
+ * @version 1.0.1
  * @see ShareFileLoadedEvent
  * @see ListenerAdapter
  * @see CNetCompiler
@@ -43,7 +43,9 @@ public class ShareListener implements ListenerAdapter {
     public void handleShareFile(ShareFileLoadedEvent event) throws IOException {
         // Exit if the event is already cancelled
         if (event.isCancelled()) return;
+
         File file = event.getFile();
+        if (!file.exists()) return;
 
         // Check if the file can be compiled by the CNetCompiler
         if (!CNetCompiler.canCompile(file)) return;
