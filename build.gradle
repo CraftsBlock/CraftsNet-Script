@@ -1,5 +1,11 @@
 plugins {
     id 'java'
+    id 'maven-publish'
+}
+
+def env = new Properties()
+file(".env").withInputStream {
+    env.load(it)
 }
 
 java {
@@ -33,4 +39,47 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.jetbrains/annotations
     implementation 'org.jetbrains:annotations:26.0.2'
+}
+
+publishing {
+    publications {
+        normal(MavenPublication) {
+            artifactId "script"
+            from components.java
+            pom {
+                name = 'Script'
+                description = 'A simple scripting language build in into craftsnet'
+
+                scm {
+                    url = 'https://github.com/CraftsBlock/CraftsNet'
+                    connection = 'scm:git:git://github.com/CraftsBlock/CraftsNet-Script.git'
+                    developerConnection = 'scm:git:git@github.com:CraftsBlock/CraftsNet-Script.git'
+                }
+
+                issueManagement {
+                    system = 'github'
+                    url = 'https://github.com/CraftsBlock/CraftsNet-Script/issues'
+                }
+
+                licenses {
+                    license {
+                        name = 'GNU General Public License v3.0'
+                        url = 'https://github.com/CraftsBlock/CraftsNet-Script/blob/main/LICENSE'
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url('https://repo.craftsblock.de/releases')
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = env["username"]
+                password = env["password"]
+            }
+        }
+    }
 }
