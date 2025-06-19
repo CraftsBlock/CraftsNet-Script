@@ -95,7 +95,7 @@ public class CNetCompiler {
                 lines += countLines(remaining);
                 try {
                     exchange.response().print(remaining);
-                } catch (IOException e) {
+                } catch (RuntimeException e) {
                     throw new RuntimeException(e);
                 }
                 continue;
