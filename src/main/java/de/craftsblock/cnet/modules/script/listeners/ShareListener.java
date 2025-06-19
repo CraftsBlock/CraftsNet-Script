@@ -4,8 +4,8 @@ import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftscore.event.EventHandler;
 import de.craftsblock.craftscore.event.EventPriority;
 import de.craftsblock.craftscore.event.ListenerAdapter;
-import de.craftsblock.craftsnet.api.annotations.AutoRegister;
 import de.craftsblock.craftsnet.api.http.Exchange;
+import de.craftsblock.craftsnet.autoregister.meta.AutoRegister;
 import de.craftsblock.craftsnet.events.requests.shares.ShareFileLoadedEvent;
 
 import java.io.File;

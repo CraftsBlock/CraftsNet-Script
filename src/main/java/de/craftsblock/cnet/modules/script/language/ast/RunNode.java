@@ -1,6 +1,6 @@
 package de.craftsblock.cnet.modules.script.language.ast;
 
-import de.craftsblock.craftsnet.addon.AddonClassLoader;
+import de.craftsblock.craftsnet.addon.loaders.AddonClassLoader;
 import de.craftsblock.craftsnet.api.http.Exchange;
 import de.craftsblock.cnet.modules.script.language.CNetScript;
 import de.craftsblock.cnet.modules.script.language.compiler.CNetInterpreter;

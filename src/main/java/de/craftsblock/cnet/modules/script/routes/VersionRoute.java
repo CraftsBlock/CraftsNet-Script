@@ -3,12 +3,10 @@ package de.craftsblock.cnet.modules.script.routes;
 import de.craftsblock.cnet.modules.script.language.compiler.CNetCompiler;
 import de.craftsblock.craftscore.json.Json;
 import de.craftsblock.craftsnet.addon.Addon;
-import de.craftsblock.craftsnet.api.annotations.AutoRegister;
 import de.craftsblock.craftsnet.api.http.*;
 import de.craftsblock.craftsnet.api.http.annotations.RequestMethod;
 import de.craftsblock.craftsnet.api.http.annotations.Route;
-
-import java.io.IOException;
+import de.craftsblock.craftsnet.autoregister.meta.AutoRegister;
 
 /**
  * The {@link VersionRoute} class defines a route for retrieving the version information
@@ -45,18 +43,14 @@ public class VersionRoute implements RequestHandler {
      * This method responds with a JSON object containing the addon's name and version.
      *
      * @param exchange The {@link Exchange} object containing the request and response information.
-     * @throws IOException If an I/O error occurs while writing the response.
      */
     @Route("/module/script/version")
     @RequestMethod(HttpMethod.GET)
-    public void handleVersion(Exchange exchange) throws IOException {
-        Request request = exchange.request();
-        Response response = exchange.response();
-
+    public Json handleVersion(Exchange exchange) {
         // Respond with json containing the addon's name and the compiler version
-        response.print(Json.empty()
+        return Json.empty()
                 .set("name", addon.getMeta().name())
-                .set("version", CNetCompiler.VERSION));
+                .set("version", CNetCompiler.VERSION);
     }
 
 }
