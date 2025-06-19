@@ -32,7 +32,7 @@
   <dependency>
     <groupId>de.craftsblock.craftsnet.modules</groupId>
     <artifactId>script</artifactId>
-    <version>X.X.X-SNAPSHOT</version>
+    <version>X.X.X</version>
   </dependency>
 </dependencies>
 ```
@@ -48,6 +48,6 @@ repositories {
 ```gradle
 dependencies {
   ...
-  implementation "de.craftsblock.craftsnet.modules:script:X.X.X-SNAPSHOT"
+  implementation "de.craftsblock.craftsnet.modules:script:X.X.X"
 }
 ```
